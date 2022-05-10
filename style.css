@@ -61,6 +61,7 @@
     color: black;
     align-items: center;
     
+    
 }
 
 .menu a{
@@ -121,13 +122,13 @@ h1{
     z-index: 0;
 }
 
-p{
+.subtitle{
     color: rgb(255, 255, 255);
     font-size: 30px;
     font-weight: 700;
     margin: 10px 30px;
     text-align: center;
-    filter:drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.7)); 
+    filter:drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.2)); 
 }
 
 .boton{
@@ -158,10 +159,12 @@ section{
 h2{
     width: 50%;
     margin: 20px auto 20px auto;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     font-weight: 900;
-    color: #f70a61;
+    background-image: linear-gradient(to right, #f77952 0%, #d34e24 100%);
+  -webkit-background-clip: text;
+  color: transparent; 
     filter:drop-shadow(0 8px 8px rgba(0, 0, 0, 0.161)); 
 }
 
@@ -172,7 +175,8 @@ section p{
     font-weight: 900;
     color: white;
     text-align: justify;
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, #f6d465df 0%, #fd9f85db 100%);
+    filter:drop-shadow(0 8px 8px rgba(0, 0, 0, 0.161)); 
     padding: 30px;
     border-radius: 10px;
 }
@@ -185,6 +189,7 @@ section p{
 
 .container-tarjetas{
     width: 90%;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -196,7 +201,8 @@ section p{
 .t1, .t2, .t3{
     width: 300px;
     height: 450px;
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-color: #ffdb6f;
+    /* background-image: linear-gradient(120deg, #ffc813 0%, #fda085 100%); */
     margin: auto;
     display: flex;
     justify-content: center;
@@ -244,6 +250,214 @@ span{
     font-weight: 600;
 }
 
+
+.beneficios{
+    width: 90%;
+    height:75vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 50px auto;
+    filter:drop-shadow(0 8px 8px rgba(0,0,0,0.2));
+    background-color: #ffffff;
+    
+}
+
+.iconos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.img-ico{
+    width: 40%;
+    padding: 50px;
+}
+
+/* Formulario contacto  */
+
+.contact_form{  
+    
+    width: 480px; 
+    height: auto;
+    margin: 60px auto;
+    border-radius: 20px;  
+    padding-top: 20px;
+    padding-bottom: 20px;  
+    background-color: rgba(40, 45, 47, 0.437); 
+  
+      border-top: 1px solid rgba(255, 0, 255, 0.555);
+      border-left: 1px solid rgba(235, 85, 255, 0.431);
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.218);
+      backdrop-filter: blur(5px);
+  }
+  
+  
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    color: black;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+    color: black;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  
+  label{
+    display: flex; 
+    justify-content: start;
+  }
+  
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;  
+    margin: auto 30px;
+   
+    
+    text-transform: uppercase;
+    background-color: #00000099; 
+    border-color: #ffffff9a; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  button:hover{
+      background-color:#000000;
+      border-color: #ffffffce;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-left: 2px solid rgba(255, 255, 255, 0.431);
+      border-top: 2px solid rgba(255, 255, 255, 0.431);
+  }
+  
+  
+  button p{
+    color: #fff; 
+  }
+  
+  
+  .obligatorio{
+    color: #ffca2b; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px; 
+    color: #ffffff;  
+  }
+  
+  .formulario h2{
+      font-size: 40px;
+      width: 80%;
+      text-align: center;
+      padding: 30px;
+      color: whitesmoke;
+  }
+  
+  .contact-me{
+      font-size: 14px;
+      text-align: center;
+      margin: auto;
+      width: 80%;
+      text-align: left; 
+      padding-bottom: 30px; 
+      color: white;
+      font-weight: 400;
+  }
+  
+  
+  
+  p{
+    font-size: 15px; 
+    color: #ffffff; 
+    font-weight: 600;
+    margin: 10px 30px;
+    text-align: center;
+    filter:drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.2)); 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+
+/* FOOTER */
+
+footer{
+    background-image: linear-gradient(to right, rgba(255, 234, 0, 0.596) 25%, rgba(255, 136, 0, 0.492) 100%);
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+footer .footer{
+    text-decoration: none;
+    color: rgb(103, 103, 103);
+    position: relative;
+    font-weight: 800;
+    top: 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: all 0.3ms ease;
+}
+
+footer .footer:hover{
+    color: #ff0073;
+    
+}
+
 @media only screen and (min-width: 1280px){
     header{
         background-position-y:-300px ;
@@ -287,6 +501,7 @@ span{
 
     .container-tarjetas{
         width: 100%;
+        height: 1300px;
         flex-direction: column;
         margin-top: 40px;
         
@@ -319,6 +534,117 @@ span{
         filter:drop-shadow(0 8px 8px rgba(0,0,0,0.5));
     }
     
+    .beneficios{
+        width: 75%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        margin: 60px auto;
+        filter:drop-shadow(0 8px 8px rgba(0,0,0,0.2));
+        background-color: #ffffff;
+    }
+
+    .beneficios h2{
+        width: 100%;
+        margin: 10px auto;
+        font-size: 40px;
+    }
+
+    .beneficios p{
+        width: 80%;
+    }
+    
+    .iconos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: auto;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .img-ico{
+        width: 20%;
+        padding: 35px;
+    }
+
+    /* Formulario */
+
+    .contact_form{  
+    
+        width: 75%; 
+        height: auto;
+        margin: 60px auto;
+        border-radius: 20px;  
+        padding-top: 20px;
+        padding-bottom: 20px;  
+        background-color: rgba(40, 45, 47, 0.437); 
+      
+          border-top: 1px solid rgba(255, 0, 255, 0.555);
+          border-left: 1px solid rgba(235, 85, 255, 0.431);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.218);
+          backdrop-filter: blur(5px);
+      }
+      
+      
+      input{
+        background-color: #fbfbfb; 
+        width: 90%; 
+        height: 40px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #ab4493; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+      }
+      
+      
+      textarea{
+        width: 90%; 
+        height: 150px; 
+      }
+      
+      
+      button{
+          width: 90%;
+      }
+      
+      button p{
+        color: #fff; 
+      }
+      
+      
+      span{
+        color: #ab4493; 
+      }
+      
+      
+      .aviso{
+        font-size: 12px;
+        letter-spacing: 2px; 
+        color: #ffffff;  
+        font-family: sans-serif;
+      }
+      
+      .formulario h2{
+          font-size: 40px;
+          width: 80%;
+          text-align: center;
+          padding: 30px;
+      }
+      
+      .contact-me{
+          font-size: 13px;
+          text-align: center;
+          margin: auto;
+          width: 90%;
+          text-align: left; 
+          padding-bottom: 30px; 
+          color: white;
+          font-weight: 600;
+      }
 
 
 }
@@ -345,7 +671,7 @@ span{
         justify-content: space-around;
         width: 20px;
         height: 18px;
-        padding: 8px;
+        padding: 12px;
         border-radius: 50%;
         background: #333333;
         color: white;
@@ -375,9 +701,9 @@ span{
      .toggle {
         display: none;
         text-align: center;
-        background: rgba(0, 0, 0, 0.652);
+        background: rgba(0, 0, 0, 0.852);
         border-radius: 7px;
-        padding: 5px;
+        padding: 40px;
         width: 100px;
         margin: 10px auto;
         position: absolute;
@@ -390,9 +716,9 @@ span{
      .toggle li {
          list-style: none;
          display: block;
-         padding: 10px 0;
+         padding: 20px 0;
          color: white;
-         font-size: 15px;
+         font-size: 20px;
      }
      
      .menu-toggle:checked + .toggle {
@@ -529,6 +855,7 @@ span{
 
     .container-tarjetas{
         width: 100%;
+        height: 1300px;
         flex-direction: column;
         margin-top: 40px;
         
@@ -561,6 +888,114 @@ span{
         filter:drop-shadow(0 8px 8px rgba(0,0,0,0.5));
     }
     
+
+    .beneficios{
+        width: 75%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        margin: 60px auto;
+        filter:drop-shadow(0 8px 8px rgba(0,0,0,0.2));
+        background-color: #ffffff;
+    }
+
+    .beneficios h2{
+        width: 100%;
+        margin: 10px auto;
+        font-size: 40px;
+    }
+    
+    .iconos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: auto;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .img-ico{
+        width: 20%;
+        padding: 35px;
+    }
+
+    /* Formulario */
+
+    .contact_form{  
+    
+        width: 95%; 
+        height: auto;
+        margin: 60px auto;
+        border-radius: 20px;  
+        padding-top: 20px;
+        padding-bottom: 20px;  
+        background-color: rgba(40, 45, 47, 0.437); 
+      
+          border-top: 1px solid rgba(255, 0, 255, 0.555);
+          border-left: 1px solid rgba(235, 85, 255, 0.431);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.218);
+          backdrop-filter: blur(5px);
+      }
+
+      input{
+        background-color: #fbfbfb; 
+        width: 90%; 
+        height: 40px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #ab4493; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+      }
+      
+      
+      textarea{
+        width: 90%; 
+        height: 150px; 
+      }
+      
+      
+      button{
+          width: 75%;
+      }
+      
+      button p{
+        color: #fff; 
+      }
+      
+      
+      span{
+        color: #ab4493; 
+      }
+      
+      
+      .aviso{
+        font-size: 12px;
+        letter-spacing: 2px; 
+        color: #ffffff;  
+        font-family: sans-serif;
+      }
+      
+      .formulario h2{
+          font-size: 40px;
+          width: 80%;
+          text-align: center;
+          padding: 30px;
+          
+      }
+      
+      .contact-me{
+          font-size: 13px;
+          text-align: center;
+          margin: auto;
+          width: 90%;
+          text-align: left; 
+          padding-bottom: 30px; 
+          color: white;
+          font-weight: 600;
+      }
 
 
 
@@ -596,7 +1031,7 @@ span{
     section p{
         width: 50%;
         margin: 20px auto 20px auto;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 900;
         color: white;
         text-align: justify;
@@ -609,6 +1044,7 @@ span{
 
     .container-tarjetas{
         width: 100%;
+        height: 1500px;
         flex-direction: column;
         margin-top: 40px;
         
@@ -618,7 +1054,7 @@ span{
     section p{
         width: 75%;
         margin: 20px auto 20px auto;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 900;
         color: white;
         text-align: justify;
@@ -639,5 +1075,36 @@ span{
         flex-direction: column;
         border-radius: 20px;
         filter:drop-shadow(0 8px 8px rgba(0,0,0,0.5));
+    }
+
+
+    .beneficios{
+        width: 95%;
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin: 60px auto;
+        filter:drop-shadow(0 8px 8px rgba(0,0,0,0.2));
+        background-color: #ffffff;
+    }
+
+    .beneficios h2{
+        width: 100%;
+        margin: 10px auto;
+        font-size: 40px;
+    }
+    
+    .iconos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: auto;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .img-ico{
+        width: 40%;
+        padding: 35px;
     }
 }

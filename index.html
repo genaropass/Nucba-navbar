@@ -28,7 +28,8 @@
                 <div class="menu">
                     <a href="#HOME" target=""><span class="option">Home</span></a>
                     <a href="#comunidad" target=""><span class="option">Comunidad</span></a>
-                    <a href="https://nucba.com.ar/" target="_blank"><span class="option" target="_blank">Nosotros</span></a>   
+                    <a href="https://nucba.com.ar/" target="_bla nk"><span class="option" target="_blank">Nosotros</span></a>   
+                    <!-- <a href="#beneficios" target=""><span class="option">Beneficios</span></a> -->
                 </div>
 
                 <nav class="menuHTML">
@@ -42,9 +43,10 @@
                   
                     <input type="checkbox" id="menu-toggle" class="menu-toggle" />
                     <ul class="toggle">
-                       <li><a href="">Home</a></li>
-                       <li><a href="">Comunidad</a></li>
-                       <li><a href="">Nosotros</a></li>
+                       <li><a href="#HOME">Home</a></li>
+                       <li><a href="#comunidad">Comunidad</a></li>
+                       <li><a href="https://nucba.com.ar/">Nosotros</a></li>
+                       <li><a href="#Contact">Contacto</a></li>
                     </ul>
                </nav>
             </div>
@@ -53,7 +55,7 @@
         </nav>
         <div class="tarjeta-bienvenida" id="HOME">
             <h1>Nucba Pets</h1>
-            <p>Nuestros amigos incondicionales</p>
+            <p class="subtitle">Nuestros amigos incondicionales</p>
             <a class="boton" href="#comunidad" rel="noopener noreferrer">Sobre Nosotros</a>
         </div>
         <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:#fff;"></path></svg></div>
@@ -96,7 +98,75 @@
                 </div>
             </div>
         </section>
+
+        <section class="beneficios">
+            <h2>Beneficios</h2>
+            <div class="iconos">
+                <div class="ico1">
+                    <img class="img-ico" src="/iconos/hueso.png" alt="">
+                    <h4>Descuentos en alimentos balanceados</h4>
+                </div>
+                <div class="ico2">
+                    <img class="img-ico" src="/iconos/veterinario.png" alt="">
+                    <h4>Descuentos en servicios de veterinaria</h4>
+                </div>
+                <div class="ico3">
+                    <img class="img-ico" src="/iconos/pasea-a-la-mascota.png" alt="">
+                    <h4>Paseo en horas de clases</h4>
+                </div>
+            </div> 
+        </section>
+
+        <div class="contact_form" id="Contact">
+            <div class="formulario">      
+                <h2>Formulario de contacto</h2>
+                <h3 class="contact-me">Escríbeme y en breve nos pondremos en contacto</h3>
+            
+                    <form  method="post">       
+                            <p>
+                              <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                            </p>
+                          
+                            <p>
+                              <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                            </p>
+                        
+                            <p>
+                              <label for="asunto" class="colocar_asunto">Asunto
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                            </p>    
+                          
+                            <p>
+                              <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                              </label>                     
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                            </p>                    
+                          
+                            <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+            
+                            <p class="aviso">
+                              <span class="obligatorio"> * </span>Los campos son obligatorios.
+                            </p>          
+                        
+                      </form>
+                </div>  
+            </div>
+
     </main>
+    <footer >
+        
+        <a class="footer" target="_blank" href="http://github.com/genaropass/Nucba-navbar.git">Copyright© 2022 GenPass</a>
+    </footer>
+    
 
     <script src="main.js"></script>
     
